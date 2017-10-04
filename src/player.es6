@@ -9,7 +9,6 @@ class Player {
             width: 20,
             hp: 3,
             color: this.randomColor(),
-            uniqueID : new Date().valueOf()+Math.random()
         };
         this.key = new Keyview;
     }

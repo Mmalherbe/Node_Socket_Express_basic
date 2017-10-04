@@ -1,14 +1,9 @@
 const express = require('express');
 const app = express();
 const server = require('http').createServer(app);
-const Dedupe = require('array-dedupe');
 const io = require('socket.io')(server);
 
 app.use(express.static(__dirname +'/client'));
-
-let jsonfile = require('jsonfile');
-let file = 'location.json';
-
 
 let allClients =[];
 //Store all HTML files in view folder.
@@ -29,7 +24,7 @@ function Player(id, x, y, height,width,color) {
     this.color = color;
 }
 
-setInterval(heartbeat, 33);
+    setInterval(heartbeat, 33);
 
 function heartbeat() {
 

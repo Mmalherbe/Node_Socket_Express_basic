@@ -29,8 +29,7 @@ class Controller {
             width:this.player.props.width,
             color : this.player.props.color
         };
-        // console.log(data);
-        socket.emit('start', data);
+       socket.emit('start', data);
 
     }
 
