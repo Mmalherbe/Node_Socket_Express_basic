@@ -34,6 +34,7 @@ class Controller {
     }
 
     loop() {
+        console.log("Loop");
 this.canvas.clearScreen();
         socket.on('heartbeat',
             function (data) {
